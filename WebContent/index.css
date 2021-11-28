@@ -1,0 +1,101 @@
+@charset "ISO-8859-1";
+body{
+	background-image: url("login-background.jpg");  
+}
+
+.navbar{
+    position: fixed;
+    width: 100%; 
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding:15px 0;
+    background: #66fcf1;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar .logo a{
+    color:white;
+    font-size:35px;
+    font-weight: 600;
+}
+.navbar .logo i{
+	font-size:35px;
+	color:white;
+}
+.navbar .logo i:hover{
+	cursor:pointer;
+}
+.navbar .logo a span{
+    color:white;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: white;
+
+}
+.navbar .menu li{
+	margin-right: 20px;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color:#c5c6c7;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration:none;
+}
+.navbar .menu li a:hover{
+    color:#66fcf1;
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+}
+.navbar.sticky .menu li a:hover{
+    color:#3c5777;
+}
+
+.menu-btn{
+    color: #c5c6c7;
+    font-size: 23px;
+    cursor:pointer;
+    display: none;
+}
+
+
+/*Styling for Creating Welcome User*/
+.welcome-user .container{
+	width:20%;
+	height: 400px;
+	margin-left:40%;
+	margin-right:40%;
+	padding-top:200px;
+	
+}
+.welcome-user .container button{
+	border-radius:6px;
+	padding:15px 16px;
+	font-size:20px;
+}
+.welcome-user .container button:hover{
+	cursor:pointer;
+	transform:scale(1.03)
+}
+.welcome-user .container h1{
+	text-align:center;
+	font-size:30px;
+	color:white;
+}
+
+
