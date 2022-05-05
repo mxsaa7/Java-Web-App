@@ -16,7 +16,7 @@ public class ExpenseDB {
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
-	try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/budgetTracker", "CST2355", "CST2355Database");
+	try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DB_NAME", "USERNAME", "PASSWORD");
 			
 		PreparedStatement ps = con.prepareStatement(sql)){
 		ps.setInt(1,1);	
