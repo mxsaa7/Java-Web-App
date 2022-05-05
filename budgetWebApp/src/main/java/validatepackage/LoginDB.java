@@ -11,7 +11,7 @@ public class LoginDB {
 	
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/budgettracker", "CST2355", "CST2355Database");
+			try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/DB_NAME", "USERNAME", "PASSWORD");
 					
 				PreparedStatement ps = connection.prepareStatement("select * from users where username = ? AND passwd = ? ")){
 					ps.setString(1, user.getUsername());
